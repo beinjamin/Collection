@@ -1,0 +1,23 @@
+
+public class ArrayList {
+    public static void main(String[] args) {
+        // Création d'une ArrayList pour stocker des chaînes de caractères
+        ArrayList<String> liste = new ArrayList();
+
+        // Ajout d'éléments à l'ArrayList
+        liste.add("Java");
+        liste.add("Python");
+        liste.add("JavaScript");
+
+        // Affichage des éléments de l'ArrayList
+        System.out.println("Contenu de l'ArrayList : " + liste);
+
+        // Accès à un élément spécifique par son indice
+        String langage = liste.get(0);
+        System.out.println("Premier élément : " + langage);
+
+        // Suppression d'un élément
+        liste.remove("Python");
+        System.out.println("Après suppression : " + liste);
+    }
+}

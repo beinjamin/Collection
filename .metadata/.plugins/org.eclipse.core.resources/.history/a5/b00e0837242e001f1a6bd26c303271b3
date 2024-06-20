@@ -1,0 +1,24 @@
+import java.util.TreeMap;
+
+public class ExempleTreeMap {
+    public static void main(String[] args) {
+        // Création d'un TreeMap pour stocker des noms de fruits et leurs prix
+        TreeMap<String, Double> map = new TreeMap<>();
+
+        // Ajout de paires clé-valeur au TreeMap
+        map.put("Pomme", 2.5);
+        map.put("Banane", 1.8);
+        map.put("Orange", 3.2);
+
+        // Affichage des paires clé-valeur du TreeMap (triées par clé)
+        System.out.println("Contenu du TreeMap : " + map);
+
+        // Accès à la valeur pour une clé donnée
+        double prixPomme = map.get("Pomme");
+        System.out.println("Prix de la pomme : " + prixPomme);
+
+        // Suppression d'une entrée dans le TreeMap
+        map.remove("Banane");
+        System.out.println("Après suppression : " + map);
+    }
+}

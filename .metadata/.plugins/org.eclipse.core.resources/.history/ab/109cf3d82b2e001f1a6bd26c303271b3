@@ -1,0 +1,25 @@
+package linkedlist;
+import java.util.LinkedList;
+
+public class ExempleLinkedList {
+    public static void main(String[] args) {
+        // Création d'une LinkedList pour stocker des entiers
+        LinkedList<Integer> liste = new LinkedList<>();
+
+        // Ajout d'éléments à la LinkedList
+        liste.add(10);
+        liste.add(20);
+        liste.add(30);
+
+        // Affichage des éléments de la LinkedList
+        System.out.println("Contenu de la LinkedList : " + liste);
+
+        // Ajout d'un élément au début de la LinkedList
+        liste.addFirst(5);
+        System.out.println("Après ajout au début : " + liste);
+
+        // Suppression du premier élément
+        liste.removeFirst();
+        System.out.println("Après suppression du premier élément : " + liste);
+    }
+}
